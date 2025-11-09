@@ -1,1 +1,31 @@
-render.yaml 
+services:
+  - type: web
+    name: student-multi-agent
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python -m spacy download en_core_web_sm
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_APP
+        value: app.py
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false  # Will be set in Render dashboard
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+    plan: free
+    autoDeploy: true
+    numInstances: 1
+    healthCheckPath: /health
+    build:
+      dockerfile: Dockerfile  # Optional, if using Docker
+    resources:
+      memory: 512MB
+      cpu: 1
