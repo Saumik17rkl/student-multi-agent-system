@@ -22,4 +22,4 @@ A sophisticated multi-agent system designed to assist students with academic, pr
 1. Clone the repository:
    ```bash
    git clone [https://github.com/yourusername/student-multi-agent-system.git](https://github.com/yourusername/student-multi-agent-system.git)
-   cd student-multi-agent-system
+   cd student-multi-agent-system# student-multi-agent-system
