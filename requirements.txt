@@ -1,0 +1,38 @@
+# ================================
+# Student Multi-Agent Architect & Builder
+# Dependencies
+# ================================
+
+# --- Core Framework ---
+Flask==3.0.3
+
+# --- Language Processing ---
+spacy==3.7.2
+regex==2023.12.25
+
+# --- Machine Learning & Routing (optional lightweight intent classifier) ---
+scikit-learn==1.5.1
+numpy==1.26.4
+pandas==2.2.3
+
+# --- LLM Integration / Orchestration ---
+langchain==0.3.3
+openai==1.52.1
+tiktoken==0.7.0
+
+# --- Data Handling / Memory (if used later) ---
+faiss-cpu==1.8.0
+sqlalchemy==2.0.34
+
+# --- Utility / Development ---
+python-dotenv==1.0.1
+requests==2.32.3
+
+# --- Sentiment / NLP Enhancements (optional) ---
+textblob==0.17.1
+nltk==3.9.1
+
+# --- Testing & Debugging ---
+pytest==8.3.3
+black==24.10.0
+flake8==7.1.1

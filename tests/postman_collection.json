@@ -1,0 +1,156 @@
+{
+  "info": {
+    "name": "Student Multi-Agent System API Tests",
+    "_postman_id": "de6d2f60-cfa5-4a2b-8af2-111122223333",
+    "description": "Comprehensive Postman collection to test all Student Multi-Agent Architect & Builder routes and agents.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Root - GET /",
+      "request": {
+        "method": "GET",
+        "url": "http://127.0.0.1:5000/"
+      }
+    },
+    {
+      "name": "Health - GET /health",
+      "request": {
+        "method": "GET",
+        "url": "http://127.0.0.1:5000/health"
+      }
+    },
+    {
+      "name": "Chat - POST /chat (Academic Agent)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"user_id\": \"stu_01\", \"message\": \"Explain recursion in simple terms\" }"
+        },
+        "url": "http://127.0.0.1:5000/chat"
+      }
+    },
+    {
+      "name": "Chat - POST /chat (Productivity Agent)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"user_id\": \"stu_01\", \"message\": \"Plan my study schedule for this week\" }"
+        },
+        "url": "http://127.0.0.1:5000/chat"
+      }
+    },
+    {
+      "name": "Chat - POST /chat (Mental Health Agent)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"user_id\": \"stu_01\", \"message\": \"I'm feeling anxious before my presentation\" }"
+        },
+        "url": "http://127.0.0.1:5000/chat"
+      }
+    },
+    {
+      "name": "Chat - POST /chat (Admin & Finance Agent)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"user_id\": \"stu_01\", \"message\": \"Find scholarships for CS students\" }"
+        },
+        "url": "http://127.0.0.1:5000/chat"
+      }
+    },
+    {
+      "name": "Chat - POST /chat (Career Guidance Agent)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"user_id\": \"stu_02\", \"message\": \"Help me prepare my resume for a data science internship\" }"
+        },
+        "url": "http://127.0.0.1:5000/chat"
+      }
+    },
+    {
+      "name": "Chat - POST /chat (Library & Resources Agent)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"user_id\": \"stu_02\", \"message\": \"Find textbooks for machine learning and AI\" }"
+        },
+        "url": "http://127.0.0.1:5000/chat"
+      }
+    },
+    {
+      "name": "Chat - POST /chat (Feedback & Evaluation Agent)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"user_id\": \"stu_03\", \"message\": \"Give feedback on my calculus professor\" }"
+        },
+        "url": "http://127.0.0.1:5000/chat"
+      }
+    },
+    {
+      "name": "Chat - POST /chat (Language Learning Agent)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"user_id\": \"stu_04\", \"message\": \"Correct my grammar in this sentence: She go to school every day\" }"
+        },
+        "url": "http://127.0.0.1:5000/chat"
+      }
+    },
+    {
+      "name": "Chat - POST /chat (Peer Collaboration Agent)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"user_id\": \"stu_04\", \"message\": \"Find study partners for AI course\" }"
+        },
+        "url": "http://127.0.0.1:5000/chat"
+      }
+    },
+    {
+      "name": "Chat - POST /chat (Health & Lifestyle Agent)",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"user_id\": \"stu_05\", \"message\": \"Give me tips for better sleep and focus\" }"
+        },
+        "url": "http://127.0.0.1:5000/chat"
+      }
+    },
+    {
+      "name": "Clear Memory - POST /clear",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"user_id\": \"stu_01\" }"
+        },
+        "url": "http://127.0.0.1:5000/clear"
+      }
+    }
+  ]
+}
