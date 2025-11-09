@@ -5,7 +5,7 @@ Handles: scholarships, budgeting, and administrative assistance.
 Future upgrade: connect to real APIs or document parsers.
 """
 
-def handle_query(user_input: str, context: dict = None) -> str:
+def handle(user_input: str, context: dict = None) -> str:
     """
     Processes queries related to university admin, fees, or scholarships.
     """
