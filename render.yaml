@@ -13,7 +13,6 @@ services:
         value: production
       - key: FLASK_APP
         value: app.py
-    envVars:
       - key: OPENAI_API_KEY
         sync: false  # Will be set in Render dashboard
       - key: GROQ_API_KEY
@@ -24,8 +23,6 @@ services:
     autoDeploy: true
     numInstances: 1
     healthCheckPath: /health
-    build:
-      dockerfile: Dockerfile  # Optional, if using Docker
     resources:
       memory: 512MB
       cpu: 1
